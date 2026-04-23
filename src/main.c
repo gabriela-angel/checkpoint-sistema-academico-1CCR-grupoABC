@@ -1,10 +1,10 @@
 #include<stdio.h>
 
-void media(void){
+void calculo_media(void){
 
-    int num1, num2, media;
+    int nota1, nota2, media;
 
-    media = (num1 + num2) / 2;
+    media = (nota1 + nota2) / 2;
 }
 
 void parte_3(void) {
