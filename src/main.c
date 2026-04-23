@@ -1,5 +1,12 @@
 #include<stdio.h>
 
+void media(void){
+
+    int num1, num2, media;
+
+    media = (num1 + num2) / 2;
+}
+
 void parte_3(void) {
 /* 
 O sistema deverá conter uma opção para calcular a derivada de uma função simples do tipo:
