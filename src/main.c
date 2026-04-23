@@ -7,7 +7,7 @@ void calculo_media(void){
     media = (nota1 + nota2) / 2; // Para calcular a média, as notas são somadas e divididas por 2
 }
 
-void parte_3(void) {
+void calcula_derivada(void) {
     int a, b, c;
     
     printf("a: \n");
@@ -56,6 +56,7 @@ int main() {
             break;
 
             case 5: // CALCULAR DERIVADA
+                calcula_derivada();
             break;
 
             case 6:
