@@ -40,7 +40,38 @@ scanf("%d", &a);
 
 int main() {
     
+    int opcao;
+    
+    printf("========================= \n");
+    printf("= SISTEMA EQUIPE GIMOTW =\n");
+    printf("=========================\n");
 
+    
+    printf("1 - INSERIR NOTAS\n2 - CALCULAR MEDIAS\n3 - VERIFICAR SITUACAO\n4 - EXIBIR RESULTADO\n5 - CALCULAR DERIVADA\n5 - CALCULAR DERIVADA\n6 - SAIR\nDigite a opcao desejada: ");
+    scanf("%d", &opcao);
+
+    switch(opcao){
+        case 1: // INSERIR NOTAS
+        break;
+
+        case 2: // CALCULAR MEDIAS
+        break;
+
+        case 3: // VERIFICAR SITUACAO
+        break;
+
+        case 4: // EXIBIR RESULTADO
+        break;
+
+        case 5: // CALCULAR DERIVADA
+        break;
+
+        case 6: // SAIR
+        break;
+
+        default:
+        printf("OPCAO INVALIDA ");
+    }
     
     return 0;
 }
