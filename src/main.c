@@ -24,7 +24,7 @@ void calcula_derivada(void) {
     else
         print("f'(x) = %dx - b", (2 * a), -b);
 }
-void verificar_situacao() {
+int verificar_situacao() {
     float media;
 
     printf("Digite a media do aluno: ");
@@ -32,11 +32,22 @@ void verificar_situacao() {
 
     if (media >= 6) {
         printf("APROVADO\n");
+        return 0;
     } else if (media >= 5) {
         printf("RECUPERACAO\n");
+        return 1;
     } else {
         printf("REPROVADO\n");
+        return 2;
     }
+    return 2;
+}
+void exibir_resultado(float nota1, float nota2, float media, char* situacao) {
+    printf("\n===== RESULTADO =====\n");
+    printf("Nota 1: %.2f\n", nota1);
+    printf("Nota 2: %.2f\n", nota2);
+    printf("Media: %.2f\n", media);
+    printf("Situacao: %s\n", situacao);
 }
 int main() {
     
