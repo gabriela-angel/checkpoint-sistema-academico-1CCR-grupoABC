@@ -1,4 +1,8 @@
 #include<stdio.h>
+float nota1 = -1;
+float nota2 = -1;
+float media = -1;
+int situacao = -1;
 
 void calculo_media(void){
 
@@ -42,12 +46,18 @@ int verificar_situacao() {
     }
     return 2;
 }
-void exibir_resultado(float nota1, float nota2, float media, char* situacao) {
+void exibir_resultado() {
     printf("\n===== RESULTADO =====\n");
     printf("Nota 1: %.2f\n", nota1);
     printf("Nota 2: %.2f\n", nota2);
     printf("Media: %.2f\n", media);
-    printf("Situacao: %s\n", situacao);
+    printf("Situacao: ");
+    if (situacao == 0)
+            printf("APROVADO\n");
+   else if (situacao == 1) {
+        printf("RECUPERACAO\n");
+    else {
+        printf("REPROVADO\n");
 }
 int main() {
     
@@ -73,10 +83,12 @@ int main() {
             case 2: // CALCULAR MEDIAS
             break;
 
-            case 3: // VERIFICAR SITUACAO
+            case 3:  
+                verificar_situacao();
             break;
 
-            case 4: // EXIBIR RESULTADO
+            case 4: 
+                exibir_resultado();
             break;
 
             case 5: // CALCULAR DERIVADA
