@@ -13,7 +13,7 @@ int main() {
 //Parênteses nas variáveis de soma
     media = (nota1 + nota2) / 2;
 //Arrumamos as condições
-    if (media <= 5) {
+    if (media >= 6) {
         printf("Aluno aprovado\n");
     } else {
         printf("Aluno reprovado\n");
